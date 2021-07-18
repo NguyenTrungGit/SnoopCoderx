@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+*,
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0b2f41;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25), inset 2px 2px 5px rgba(255, 255, 255, 0.25), 8px 30px 30px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+}
+.container h2 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #1f9aff;
+}
+.container .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  padding-right: 10px;
+  box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25), inset 2px 2px 5px rgba(255, 255, 255, 0.25), 8px 30px 30px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+}
+.container .skills h3 {
+  min-width: 180px;
+  text-align: right;
+  padding-right: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.container .skills .rating {
+  position: relative;
+  display: flex;
+  margin: 10px 0;
+  flex-direction: row-reverse;
+}
+.container .skills .rating input {
+  position: relative;
+  width: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  overflow: hidden;
+}
+.container .skills .rating input::before {
+  content: "";
+  position: absolute;
+  font-family: fontAwesome;
+  font-size: 35px;
+  position: absolute;
+  left: 4px;
+  color: #030c11;
+  transition: 0.5s;
+}
+.container .skills .rating input:nth-child(2n+1)::before {
+  right: 4px;
+  left: inherit;
+}
+
+.container .skills .rating input:hover ~ input::before,
+.container .skills .rating input:hover::before,
+.container .skills .rating input:checked ~ input::before,
+.container .skills .rating input:checked::before {
+  color: #1f9aff;
+}/*# sourceMappingURL=skill-bar.css.map */
