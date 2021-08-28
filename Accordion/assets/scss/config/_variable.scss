@@ -1,0 +1,28 @@
+/*=============== google fonts ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== variables css ===============*/
+
+:root {
+   /*=============== colors ===============*/
+   --hue-color: 255;
+
+   --frist-color: hsl(var(--hue-color), 48%, 35%);
+   --title-color: hsl(var(--hue-color), 48%, 22%);
+   --text-color: hsl(var(--hue-color), 12%, 35%);
+   --body-color: hsl(var(--hue-color), 48%, 98%);
+   --container-color: hsl(0, 0%, 100%);
+
+   /*=============== fonts and typography ===============*/
+   --body-font: "Poppins", san-serif;
+
+   --normal-font-size: 0.938em;
+   --small-font-size: 0.831em;
+   --smaller-font-size: 0.75em;
+
+   @media screen and (min-width: 968px) {
+      --normal-font-size: 1em;
+      --small-font-size: 0.875em;
+      --smaller-font-size: 0.813em;
+   }
+}
